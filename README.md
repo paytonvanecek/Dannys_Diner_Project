@@ -1,2 +1,2 @@
-# Pizza_Runner_Project
-Pizza Runner Project
+# Dannys_Diner_Project
+Dannys Diner Project
