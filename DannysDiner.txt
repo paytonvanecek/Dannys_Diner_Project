@@ -156,9 +156,9 @@ ORDER BY s.customer_id ASC;
 
 
 
-Bonus
+--Bonus
 
-Recreate the table
+--Recreate the table
 customer_id	order_date	product_name	price	member
 A	2021-01-01	curry	15	N
 A	2021-01-01	sushi	10	N
@@ -176,7 +176,7 @@ C	2021-01-01	ramen	12	N
 C	2021-01-01	ramen	12	N
 C	2021-01-07	ramen	12	N
 
-Solution:
+--Solution:
 
 SELECT s.customer_id,
 	s.order_date,
@@ -195,9 +195,9 @@ ON s.customer_id = j.customer_id
 ORDER BY s.customer_id, s.order_date, m.price DESC;
 
 
-ADD RANK TO ABOVE TABLE (ONLY RANK IF MEMBER)
+--ADD RANK TO ABOVE TABLE (ONLY RANK IF MEMBER)
 
-Solution:
+--Solution:
 
 WITH CTE AS (
 SELECT s.customer_id,
